@@ -20,6 +20,10 @@ body {
   font-family: var(--body-font-family);
 }
 
+.display-none {
+  display: none;
+}
+
 .icon {
   display: block;
 }
