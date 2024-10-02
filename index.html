@@ -30,6 +30,12 @@
       </nav>
     </header>
     <main>
+      <section class="sortByWrapper">
+        <button>#HTML</button>
+        <button>#CSS/SCSS</button>
+        <button>#JAVASCRIPT</button>
+        <button>#BOOTSTRAP</button>
+      </section>
       <section class="pinnedProjects">
         <!-- SENTENCE 1 -->
         <article class="sentence sentence1"><p>" Hello !</p></article>
@@ -71,16 +77,18 @@
               class="projectPicture"
               src="./assets/animeArtMeteo.JPG"
               alt="picture of Anime Art Meteo Project"
-            />
+            />           
             <h2>Anime Art Meteo</h2>
-            <p>
-              Meteo web application who generates illustrations - Work in
-              progress
-            </p>
-            <p>
-              API REST |Async | Collections user | modules JS | localStorage |
-              CRUD
-            </p>
+            <div class="infoProjectWrapper"> 
+              <p class="description">
+                Meteo web application who generates illustrations - Work in
+                progress
+              </p>
+              <p>
+                API REST |Async | Collections user | modules JS | localStorage |
+                CRUD
+              </p>
+            </div>
             <p><strong>#HTML #JS #SCSS #BOOTSTRAP</strong></p>
           </div>
         </article>
@@ -109,8 +117,10 @@
               alt=""
             />
             <h2>Anime Art Clock</h2>
-            <p>Clock application</p>
-            <p>Animation with JS | Glass effect in CSS</p>
+            <div class="infoProjectWrapper">
+              <p class="description">Clock application</p>
+              <p>Animation with JS | Glass effect in CSS</p>
+            </div>
             <p><strong>#HTML #JS #CSS</strong></p>
           </div>
         </article>
@@ -148,8 +158,10 @@
           <div class="card-body">
           <img class="projectPicture" src="./assets/got.JPG" alt="" />
             <h2>GOT citations</h2>
-            <p>Games of thrones citations generator</p>
-            <p>API Axios | method JS | Responsive CSS</p>
+            <div class="infoProjectWrapper">
+              <p class="description">Games of thrones citations generator</p>
+              <p>API Axios | method JS | Responsive CSS</p>
+            </div>
             <p><strong>#HTML #JS #CSS</strong></p>
           </div>
         </article>
@@ -190,18 +202,20 @@
           <div class="card-body">
             <img class="projectPicture" src="./assets/pomodoro.JPG" alt="" />
             <h2>Themed pomodoro</h2>
-            <p>
-            Pomodoro with switch themes between "Star Wars", "Stranger Things"
-            and "Animal Crossing"
-           </p>
-           <p>Animation CSS | Switch theme | Responsive | State</p>
+            <div class="infoProjectWrapper">
+              <p class="description">
+              Pomodoro with switch themes between "Star Wars", "Stranger Things"
+              and "Animal Crossing"
+             </p>
+             <p>Animation CSS | Switch theme | Responsive | State</p>
+           </div>
            <p><strong>#HTML #JS #CSS</strong></p>
         </div>
         </article>
         <!-- SENTENCE 4 -->
         <article class="sentence sentence4"><p>... your visit !</p></article>
-        <!-- PROJECT 5 -->
-        <article class="project project5">
+        <!-- PROJECT 7 -->
+        <article class="project project7">
           <div class="card-header">
             <div class="links">
               <a
@@ -231,14 +245,16 @@
             </div>
           </div>
           <div class="card-body">
-            <img class="projectPicture" src="./assets/mangazertype.JPG" alt="" />
+            <img class="projectPicture mangazertypePicture" src="./assets/mangazertype.JPG" alt="" />
             <h2>MangAzertype</h2>
-            <p>
+            <div class="infoProjectWrapper">
+            <p class="description">
               Educational typing games for children around the theme of children's
               manga
             </p>
             <p>Modal | User Choice | object CLASS | Unicorns!</p>
-            <p><strong>#HTML #JS #CSS</strong></p>
+          </div>
+            <p><strong>#HTML #JS #CSS</strong></p>          
         </div>
         </article>
         <!-- PROJECT 6 -->
@@ -274,15 +290,17 @@
           <div class="card-body">
             <img class="projectPicture" src="./assets/hanabie.JPG" alt="" />
             <h2>Hanabie Drum Kit</h2>
-            <p>Play with Hanabie, a Kawaii metal band, using your keyboard !</p>
-            <p>User Keydown | Audio in JS | Button CSS Effect</p>
+            <div class="infoProjectWrapper">
+              <p class="description">Play with Hanabie, a Kawaii metal band, using your keyboard !</p>
+              <p>User Keydown | Audio in JS | Button CSS Effect</p>
+            </div>
             <p><strong>#HTML #JS #CSS</strong></p>
           </div>
         </article>
         <!-- SENTENCE 5 -->
         <article class="sentence sentence5"><p>See you ...</p></article>
-        <!-- PROJECT 7 -->
-        <article class="project project7">
+        <!-- PROJECT 5 -->
+        <article class="project project5">
           <div class="card-header">
             <div class="links">
               <a
@@ -302,8 +320,10 @@
           <div class="card-body">
             <img class="projectPicture" src="./assets/rainbow.JPG" alt="" />
             <h2>Animated rainbow</h2>
-            <p>Rainbow in mouvement</p>
-            <p>Animation CSS | Drawing in CSS</p>
+            <div class="infoProjectWrapper">
+              <p class="description">Rainbow in mouvement</p>
+              <p>Animation CSS | Drawing in CSS</p>
+            </div>
             <p><strong>#HTML #CSS</strong></p>
           </div>
         </article>
@@ -332,8 +352,10 @@
               alt=""
             />
             <h2>Update CSS variables in CSS</h2>
-            <p>Variables CSS mofidied by user choice</p>
-            <p>Dataset | Interactiv pick-color, blur and spacing</p>
+            <div class="infoProjectWrapper">
+              <p class="description">Variables CSS mofidied by user choice</p>
+              <p>Dataset | Interactiv pick-color, blur and spacing</p>
+            </div>
             <p><strong>#HTML #CSS #JS</strong></p>
           </div>
         </article>
@@ -358,11 +380,13 @@
           <div class="card-body">
             <img class="projectPicture" src="./assets/wichbass.JPG" alt="" />
             <h2>Wich bass do you prefer ?</h2>
-            <p>
-              Extendable panels to present differents colors of Fender
-              Precision-Bass
-             </p>
-            <p>Toggle class | CSS transition</p>
+            <div class="infoProjectWrapper">
+              <p class="description">
+                Extendable panels to present differents colors of Fender
+                Precision-Bass
+               </p>
+              <p>Toggle class | CSS transition</p>
+            </div>
             <p><strong>#HTML #CSS #JS</strong></p>
           </div>
         </article>

@@ -102,6 +102,28 @@ main {
   height: 100%;
 }
 
+/*SORT BY NAV*/
+.sortByWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.sortByWrapper button {
+  border: none;
+  background: var(--alert-color);
+  opacity: 0.8;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.sortByWrapper button:hover {
+  opacity: 1;
+}
+
 /*GRID GENERAL MOBILE FIRST*/
 .pinnedProjects {
   display: grid;
@@ -128,6 +150,7 @@ main {
     "project8 project8 project8"
     "project9 project9 sentence6"
     "project9 project9 sentence6";
+  padding: 0.5rem;
 }
 
 /*GRID CARD HEADER*/
@@ -186,9 +209,9 @@ main {
   /* border: 2px solid; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding: 1rem;
+  padding-bottom: 3rem;
 }
 
 /*GRID PROJECTS*/
@@ -221,6 +244,9 @@ main {
   margin: 0;
   padding: 0.5rem;
   padding-bottom: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
 }
 
 .project1 {
@@ -388,5 +414,11 @@ footer {
 
   header section {
     align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .description {
+    display: none;
   }
 }
