@@ -118,6 +118,7 @@ main {
 /*SORT BY NAV*/
 .sortByWrapper {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   gap: 0.5rem;
   flex-wrap: wrap;
@@ -187,6 +188,8 @@ main {
 
 .sortedProjects {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
   opacity: 1;
