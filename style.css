@@ -166,7 +166,11 @@ main {
     "project8 project8 project8"
     "project8 project8 project8"
     "project9 project9 sentence6"
-    "project9 project9 sentence6";
+    "project9 project9 sentence6"
+    "project10 project10 project10"
+    "project10 project10 project10"
+    "project11 project11 project11"
+    "project11 project11 project11";
   padding: 0.5rem;
 }
 
@@ -347,6 +351,14 @@ main {
   grid-area: project9;
 }
 
+.project10 {
+  grid-area: project10;
+}
+
+.project11 {
+  grid-area: project11;
+}
+
 /*GRID SENTENCES*/
 .sentence {
   color: black;
@@ -425,8 +437,9 @@ footer {
       "project7 project7 project8 project8"
       "project7 project7 project8 project8"
       "project9 project9 sentence6 sentence6"
-      "project9 project9 sentence6 sentence6";
-
+      "project9 project9 sentence6 sentence6"
+      "project10 project10 project11 project11"
+      "project10 project10 project11 project11";
     grid-gap: 30px;
   }
 
