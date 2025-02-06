@@ -6,6 +6,7 @@ const sortCssButton = document.querySelector(".sortCssButton");
 const sortJsButton = document.querySelector(".sortJsButton");
 const sortBstpButton = document.querySelector(".sortBstpButton");
 const sortReactButton = document.querySelector(".sortReactButton");
+const sortExpressButton = document.querySelector(".sortExpressButton");
 const allSentences = document.querySelectorAll(".sentence");
 const pinnedProjectsList = document.querySelector("#projectsGridContainer");
 const allProjects = document.querySelectorAll(".project");
@@ -16,6 +17,8 @@ let cssProjects = document.querySelectorAll(".cssProject");
 let jsProjects = document.querySelectorAll(".jsProject");
 let bstProjects = document.querySelectorAll(".bootstrapProject");
 let reactProjects = document.querySelectorAll(".reactProjects");
+let expressProjects = document.querySelectorAll(".expressProjects");
+console.log({ expressProjects });
 
 /*SORT BY HTML PROJECTS*/
 sortHtmlButton.addEventListener("click", () => {
@@ -39,6 +42,7 @@ sortHtmlButton.addEventListener("click", () => {
   sortJsButton.classList.remove("active");
   sortBstpButton.classList.remove("active");
   sortReactButton.classList.remove("active");
+  sortExpressButton.classList.remove("active");
 });
 
 /*SORT BY ALL PROJECTS*/
@@ -57,6 +61,7 @@ sortAllButton.addEventListener("click", () => {
   sortJsButton.classList.remove("active");
   sortBstpButton.classList.remove("active");
   sortReactButton.classList.remove("active");
+  sortExpressButton.classList.remove("active");
 });
 
 /*SORT BY CSS PROJECTS*/
@@ -82,6 +87,7 @@ sortCssButton.addEventListener("click", () => {
   sortJsButton.classList.remove("active");
   sortBstpButton.classList.remove("active");
   sortReactButton.classList.remove("active");
+  sortExpressButton.classList.remove("active");
 });
 
 /*SORT BY JS PROJECTS*/
@@ -106,6 +112,7 @@ sortJsButton.addEventListener("click", () => {
   sortJsButton.classList.add("active");
   sortBstpButton.classList.remove("active");
   sortReactButton.classList.remove("active");
+  sortExpressButton.classList.remove("active");
 });
 
 /*SORT BY BOOTSTRAP PROJECTS*/
@@ -130,6 +137,7 @@ sortBstpButton.addEventListener("click", () => {
   sortJsButton.classList.remove("active");
   sortBstpButton.classList.add("active");
   sortReactButton.classList.remove("active");
+  sortExpressButton.classList.remove("active");
 });
 
 /*SORT BY REACT PROJECTS*/
@@ -143,6 +151,7 @@ sortReactButton.addEventListener("click", () => {
   pinnedProjectsList.classList.remove("pinnedProjects");
   pinnedProjectsList.classList.add("sortedProjects");
   const newsortedProjectArray = Array.from(reactProjects);
+  console.log({ reactProjects });
   console.log({ newsortedProjectArray });
   newsortedProjectArray.forEach((project) => {
     setTimeout(function () {
@@ -155,4 +164,32 @@ sortReactButton.addEventListener("click", () => {
   sortJsButton.classList.remove("active");
   sortBstpButton.classList.remove("active");
   sortReactButton.classList.add("active");
+  sortExpressButton.classList.remove("active");
+});
+
+/*SORT BY EXPRESS PROJECTS*/
+sortExpressButton.addEventListener("click", () => {
+  allSentences.forEach((sentence) => {
+    sentence.classList.add("display-none");
+  });
+  allProjects.forEach((project) => {
+    project.classList.add("display-none");
+  });
+  pinnedProjectsList.classList.remove("pinnedProjects");
+  pinnedProjectsList.classList.add("sortedProjects");
+  const newsortedProjectArray = Array.from(expressProjects);
+  console.log({ expressProjects });
+  console.log({ newsortedProjectArray });
+  newsortedProjectArray.forEach((project) => {
+    setTimeout(function () {
+      project.classList.remove("display-none");
+    }, 20);
+  });
+  sortHtmlButton.classList.remove("active");
+  sortAllButton.classList.remove("active");
+  sortCssButton.classList.remove("active");
+  sortJsButton.classList.remove("active");
+  sortBstpButton.classList.remove("active");
+  sortReactButton.classList.remove("active");
+  sortExpressButton.classList.add("active");
 });
