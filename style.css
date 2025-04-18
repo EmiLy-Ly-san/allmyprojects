@@ -162,23 +162,27 @@ main {
 		"sentence3 project3 project3"
 		"project4 project4 project4"
 		"project4 project4 project4"
+		"project10 project10 project10"
+		"project10 project10 project10"
 		"sentence4 sentence4 sentence4"
 		"project5 project5 project5"
 		"project5 project5 project5"
 		"project6 project6 project6"
 		"project6 project6 project6"
+		"project11 project11 project11"
+		"project11 project11 project11"
 		"sentence5 project7 project7"
 		"sentence5 project7 project7"
 		"project8 project8 project8"
 		"project8 project8 project8"
-		"project9 project9 sentence6"
-		"project9 project9 sentence6"
-		"project10 project10 project10"
-		"project10 project10 project10"
-		"project11 project11 project11"
-		"project11 project11 project11"
 		"project12 project12 project12"
-		"project12 project12 project12";
+		"project12 project12 project12"
+		"project13 project13 project13"
+		"project13 project13 project13"
+		"project14 project14 project14"
+		"project14 project14 project14"
+		"project9 project9 sentence6"
+		"project9 project9 sentence6";
 	padding: 0.5rem;
 }
 
@@ -368,6 +372,14 @@ main {
 
 .project12 {
 	grid-area: project12;
+}
+
+.project13 {
+	grid-area: project13;
+}
+
+.project14 {
+	grid-area: project14;
 }
 
 /*GRID SENTENCES*/
